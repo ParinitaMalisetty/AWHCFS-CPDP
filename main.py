@@ -14,13 +14,15 @@
 # from experiments.cpsfs import CPSFS
 # from experiments.cpsfs_experiment import CPSFSExperiment
 
+from sklearn import datasets
+
 from experiments.lopo_baseline import LOPOBaselineExperiment
 from experiments.lopo_awhcfs import LOPOAWHCFSExperiment
 
 from src.config import DATASET_PATH
 from src.data_loader import DataLoader
 from src.preprocessing import Preprocessor
-
+from experiments.shap_experiment import SHAPExperiment
 def load_and_preprocess():
 
     loader = DataLoader(DATASET_PATH)
@@ -99,17 +101,24 @@ def main():
 
     print("\nDatasets Loaded Successfully")
     print(datasets.keys())
-    baseline = LOPOBaselineExperiment()
-    baseline_results = baseline.run(datasets)
+    # baseline = LOPOBaselineExperiment()
+    # baseline_results = baseline.run(datasets)
 
-    print("\nBaseline Completed")
-    print(baseline_results.head())
+    # print("\nBaseline Completed")
+    # print(baseline_results.head())
 
-    awhcfs = LOPOAWHCFSExperiment()
-    awhcfs_results = awhcfs.run(datasets)
+    # awhcfs = LOPOAWHCFSExperiment()
+    # awhcfs_results = awhcfs.run(datasets)
 
-    print("\nAWHCFS Completed")
-    print(awhcfs_results.head())
+    # print("\nAWHCFS Completed")
+    # print(awhcfs_results.head())
+    
+    shap_exp = SHAPExperiment()
+
+    shap_results = shap_exp.run(datasets)
+
+    print("\nSHAP Completed")
+    print(shap_results.head())
     
     # experiment = LOPOExperiment()
     # results = experiment.run(datasets)
