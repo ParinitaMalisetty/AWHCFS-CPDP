@@ -31,3 +31,6 @@ AWHCFS — Adaptive Weighted Hybrid Consensus Feature Selection
 Additionally, SHAP-based explainability is included to analyze the importance of selected features and understand model predictions.
 
 Overall, the project aims to investigate whether adaptive, consensus-based feature selection can improve cross-project defect prediction while maintaining interpretable feature importance.
+
+
+AWHCFS demonstrates strong alignment with model-based feature importance, achieving 0.8466 Spearman rank correlation, 0.7249 Kendall rank correlation, and 90% Top-10 feature overlap with the cross-model SHAP consensus.
