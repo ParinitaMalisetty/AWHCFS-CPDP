@@ -36,5 +36,10 @@ Overall, the project aims to investigate whether adaptive, consensus-based featu
 
 AWHCFS demonstrates strong alignment with model-based feature importance, achieving 0.8466 Spearman rank correlation, 0.7249 Kendall rank correlation, and 90% Top-10 feature overlap with the cross-model SHAP consensus.
 
+The project focuses on Cross-Project Defect Prediction (CPDP), where defect-prone code in a new software project is predicted using knowledge learned from other projects. The study evaluates 14 software projects using a Leave-One-Project-Out (LOPO) strategy with four machine learning models: Random Forest, XGBoost, LightGBM, and CatBoost.
+The main contribution is AWHCFS (Adaptive Weighted Hybrid Feature Selection), which combines Random Forest feature importance, Mutual Information, and ANOVA using adaptive weighting to identify the most relevant software metrics. This reduces the feature space from 21 metrics to 10.
+AWHCFS is evaluated against a full-feature baseline, HCFS, and WHCFS. It achieves the highest overall Accuracy (0.7686) and F1-score (0.2466) while maintaining competitive predictive performance.
+To further validate the selected features, SHAP-based Explainable AI (XAI) is applied across all four models. The AWHCFS and SHAP rankings show a 0.8466 Spearman correlation and 90% Top-10 feature overlap, demonstrating strong agreement between the proposed feature-selection approach and model-based feature importance.
+In short, the project proposes a compact and adaptive feature-selection approach for CPDP and validates the relevance and stability of the selected features using Explainable AI.
 
 IN PROGRESS...
