@@ -1,4 +1,4 @@
-# AWHCFS for Cross-Project Defect Prediction
+# AWHCFS: Adaptive Weighted Hybrid Feature Selection for Cross-Project Defect Prediction
 
 ## Overview
 
