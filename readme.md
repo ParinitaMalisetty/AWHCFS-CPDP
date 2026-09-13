@@ -212,7 +212,9 @@ python main.py
 ---
 
 ## Main Contribution
+
 The project demonstrates that AWHCFS can reduce the CPDP feature space from 21 to 10 metrics while maintaining competitive predictive performance and achieving strong agreement with SHAP-based model explanations.
 The approach focuses on three key properties:
 Compactness + Stability + Interpretability
+
 ---
