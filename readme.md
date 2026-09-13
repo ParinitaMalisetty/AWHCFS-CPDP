@@ -179,3 +179,40 @@ CPDP/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
+---
+## Reproducibility
+Requirements
+- Python 3.x
+- NumPy
+- Pandas
+- Scikit-learn
+- XGBoost
+- LightGBM
+- CatBoost
+- SHAP
+- SciPy
+---
+Run the Project
+```
+pip install -r requirements.txt
+```
+Then run:
+```
+python main.py
+```
+---
+## The complete pipeline performs:
+1. LOPO Baseline evaluation
+2. LOPO AWHCFS evaluation
+3. SHAP-based explainability analysis
+4. AWHCFS vs SHAP validation
+5. Statistical comparison
+6. Final result generation
+---
+
+## Main Contribution
+The project demonstrates that AWHCFS can reduce the CPDP feature space from 21 to 10 metrics while maintaining competitive predictive performance and achieving strong agreement with SHAP-based model explanations.
+The approach focuses on three key properties:
+Compactness + Stability + Interpretability
+---
